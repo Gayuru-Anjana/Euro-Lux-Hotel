@@ -1,0 +1,282 @@
+:root {
+  --mons: "Montserrat", sans-serif;
+  --jose: "Josefin Sans", sans-serif;
+}
+html {
+  box-sizing: border-box;
+}
+body {
+  margin: 0px;
+  padding: 0px;
+  font-size: 62.5%;
+  font-family: var(--mons);
+}
+.sidebar {
+  width: 5rem;
+  background-color: rgb(230, 219, 219);
+  height: 100%;
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 10;
+}
+.menuicon {
+  margin-top: 2rem;
+  cursor: pointer;
+}
+.line {
+  background: #222;
+  width: 1.6rem;
+  height: 0.1rem;
+  margin-bottom: 0.4rem;
+}
+.line-1 {
+  width: 1.4rem;
+  transition: all 0.3s;
+}
+.line-3 {
+  width: 1.4rem;
+  transition: all 0.3s;
+}
+.menuicon:hover > .line {
+  width: 1.7rem;
+}
+.social-icon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 20rem;
+}
+.social-1 > a > i {
+  font-size: 1.7rem;
+  color: rgb(119, 117, 117);
+  transition: color 0.5s;
+}
+.social-1 > a > i:hover {
+  color: goldenrod;
+}
+
+p {
+  font-size: 0.8rem;
+  color: #222;
+}
+.navigation {
+  width: 25rem;
+  height: 100%;
+  position: fixed;
+  left: -20rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-image: linear-gradient(
+      to top,
+      rgba(32, 32, 41, 1),
+      rgba(32, 32, 41, 0.8)
+    ),
+    url(/Images/navi-background.jpeg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  transition: all 0.4s cubic-bezier(1, 0, 0, 1);
+}
+.header {
+  font-family: var(--jose);
+  text-align: center;
+  color: rgb(231, 166, 1);
+  font-size: 2.3rem;
+  font-weight: 300;
+  letter-spacing: 0.2rem;
+}
+.nav-search {
+  position: relative;
+}
+.search {
+  color: goldenrod;
+  width: 20rem;
+  height: 2rem;
+  border-radius: 1rem;
+  outline: none;
+  border: rgb(146, 132, 132) solid 0.1rem;
+  background: rgba(36, 35, 35, 0.8);
+  padding-left: 1rem;
+  font-family: var(--jose);
+  font-size: 1rem;
+  transition: all 0.3s;
+}
+.search:focus {
+  background-color: rgba(100, 96, 96, 0.8);
+  border: rgb(59, 55, 55) solid 0.1rem;
+}
+.button-1 {
+  background: transparent;
+  border: none;
+  color: rgb(167, 122, 11);
+  font-size: 1.2rem;
+  position: absolute;
+  right: 2.2rem;
+  top: 0.8rem;
+  cursor: pointer;
+}
+.button-1:active {
+  color: goldenrod;
+}
+
+.links {
+  height: 100%;
+  padding: 0px;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.link > a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: rgb(189, 189, 189);
+  font-size: 1rem;
+  font-family: var(--jose);
+  position: relative;
+  transition-property: all;
+  transition-duration: 0.5s;
+  transition-timing-function: ease-in;
+}
+.link > a:hover {
+  color: rgb(153, 124, 42);
+}
+.link > a::before {
+  content: "";
+  width: 0rem;
+  height: 0.05rem;
+  background: white;
+  color: white;
+  position: absolute;
+  top: 0.3rem;
+  left: -2.5rem;
+  transition: width 0.3s ease-in;
+}
+.link > a::after {
+  content: "";
+  width: 0rem;
+  height: 0.05rem;
+  background: white;
+  color: white;
+  position: absolute;
+  top: 0.3rem;
+  right: -2.5rem;
+  transition: width 0.3s ease-in;
+}
+.link > a:hover::before {
+  width: 2rem;
+}
+.link > a:hover::after {
+  width: 2rem;
+}
+.copyright > p {
+  color: rgb(189, 189, 189);
+  text-align: center;
+  font-size: 0.7rem;
+}
+.checkbox:checked ~ .navigation {
+  left: 5rem;
+}
+.checkbox:checked ~ .sidebar .line-1 {
+  transform: rotate(-405deg) translate(-5px, 6px);
+}
+.checkbox:checked ~ .sidebar .line-2 {
+  opacity: 0;
+}
+.checkbox:checked ~ .sidebar .line-3 {
+  transform: rotate(405deg) translate(-5px, -6px);
+}
+.checkbox {
+  display: none;
+}
+.head {
+  margin-left: 5rem;
+  height: 100vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url(/Images/50500880-JEDRJ_2018_0465.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.brand {
+  display: flex;
+}
+.brand-name {
+  font-size: 2rem;
+  font-family: var(--jose);
+  font-weight: 400;
+  color: rgb(190, 178, 186);
+  margin-top: 2rem;
+  margin-left: 0.5rem;
+}
+.brand-image {
+  width: 5rem;
+}
+.banner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 32rem;
+}
+.banner-heading {
+  color: rgb(230, 230, 230);
+  font-size: 4rem;
+  font-family: var(--jose);
+  font-weight: 400;
+  letter-spacing: 0.1rem;
+  margin: 0.1rem 0rem;
+  animation: appear 3s;
+  animation-delay: 0.2s;
+  animation-fill-mode: backwards;
+  text-align: center;
+}
+.banner-para {
+  color: rgb(230, 230, 230);
+  font-size: 3rem;
+  font-family: var(--jose);
+  font-weight: 300;
+  animation: appear 3s;
+  animation-delay: 0.4s;
+  animation-fill-mode: backwards;
+  text-align: center;
+}
+.checkout {
+  border: none;
+  outline: none;
+  border-radius: 10rem;
+  background: linear-gradient(
+    to right,
+    rgb(247, 168, 0),
+    rgba(177, 180, 8, 0.616)
+  );
+  padding: 0.3rem 2rem;
+  font-size: 1.2rem;
+  font-family: var(--mons);
+  font-weight: 400;
+  height: 2.5rem;
+  animation: appear 3s;
+  animation-delay: 0.6s;
+  animation-fill-mode: backwards;
+}
+.checkout:hover {
+  background: linear-gradient(
+    to left,
+    rgb(247, 168, 0),
+    rgba(177, 180, 8, 0.616)
+  );
+}
+@keyframes appear {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
