@@ -368,7 +368,7 @@ p {
   flex: 1 1 50%;
   position: relative;
   outline: rgb(136, 124, 59, 0.5) solid 0.5rem;
-  outline-offset: -11rem;
+  outline-offset: -11vw;
 }
 .abt-img {
   position: absolute;
