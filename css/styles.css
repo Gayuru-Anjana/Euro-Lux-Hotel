@@ -511,3 +511,177 @@ p {
   background: orangered;
 }
 /* Rooms-end */
+/* customers */
+.customers {
+  margin-left: 5rem;
+  background-color: #15141b;
+  padding: 3rem 0rem 3rem 0rem;
+}
+.customers-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.customers-heading {
+  font-family: var(--jose);
+  color: rgba(255, 123, 0, 0.76);
+  font-weight: 300;
+  font-size: 3rem;
+  margin: 1rem 0rem 1rem 0rem;
+}
+.customer-big-line {
+  width: 12rem;
+  height: 0.05rem;
+  background-color: rgb(255, 123, 0, 0.76);
+}
+.customer-small-line {
+  width: 5rem;
+  height: 0.05rem;
+  background-color: rgb(255, 123, 0, 0.76);
+  margin-bottom: 0.7rem;
+}
+.customer-para {
+  color: papayawhip;
+  width: 40rem;
+  text-align: center;
+  font-family: var(--mons);
+  font-size: 1rem;
+  padding: 2rem 0rem 3rem 0rem;
+}
+.customer-card-wrapper {
+  display: flex;
+  justify-content: space-evenly;
+}
+.customer-card {
+  display: flex;
+  width: 37.5rem;
+  background-color: papayawhip;
+}
+.customer-image {
+  width: 12rem;
+  margin-left: -0.8rem;
+  position: relative;
+  top: 2rem;
+}
+.customer-info {
+  display: flex;
+  flex-direction: column;
+  padding-left: 1rem;
+}
+.customer-name {
+  font-family: var(--mons);
+  font-size: 1.5rem;
+  font-weight: 300;
+  margin: 1rem 0rem 0.5rem 0rem;
+}
+.customer-para-1 {
+  font-family: var(--mons);
+  font-weight: 300;
+  font-size: 0.8rem;
+  color: rgb(255, 102, 0);
+  margin: 0.5rem 0rem 0.5rem 0rem;
+}
+.customer-para-2 {
+  font-style: italic;
+  color: black;
+}
+/* customers-end */
+/* footer */
+.footer {
+  margin-left: 5rem;
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem 3rem 3rem 3rem;
+  background: #1c1c1c;
+}
+.footer-list > ul {
+  padding-left: 0rem;
+}
+.footer-heading {
+  font-size: 1.5rem;
+  font-weight: 300;
+  color: goldenrod;
+}
+.footer-list-item > a {
+  text-decoration: none;
+  color: rgba(240, 255, 240, 0.863);
+}
+.footer-list-item {
+  list-style: none;
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.589);
+  padding: 0.5rem 0rem 0.5rem 0rem;
+  font-size: 0.9rem;
+}
+.footer-form {
+  display: flex;
+}
+.footer-input {
+  width: 15rem;
+  padding: 0.5rem 0rem 0.5rem 0.5rem;
+  font-family: var(--jose);
+  font-size: 1rem;
+  outline: none;
+  border: none;
+}
+.footer-button {
+  border: none;
+  outline: none;
+  background-color: rgba(255, 68, 0, 0.555);
+  color: white;
+  font-family: sans-serif;
+}
+.footer-image-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 30rem;
+}
+.footer-img-wrapper {
+  width: 8rem;
+  margin: 0.3rem;
+  overflow: hidden;
+}
+.footer-img {
+  width: 100%;
+  height: 100%;
+  transition: all 1s;
+}
+.footer-img:hover {
+  transform: scale(1.3);
+  opacity: 0.8;
+}
+/* footer-end */
+/* creator-part */
+.creator {
+  margin-left: 5rem;
+  display: flex;
+  justify-content: space-between;
+  background: rgb(3, 14, 8);
+  padding: 0.8rem;
+}
+.end-copyright {
+  color: rgb(199, 199, 199);
+  font-size: 0.8rem;
+}
+.creator-signature {
+  color: rgb(199, 199, 199);
+  font-size: 0.9rem;
+}
+.fa-heart {
+  padding: 0.2rem;
+  font-size: 1rem;
+  color: rgb(0, 255, 170);
+  animation-name: hear-anime;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-fill-mode: backwards;
+}
+@keyframes hear-anime {
+  0% {
+    transform: rotatey(0deg);
+  }
+  100% {
+    transform: rotatey(360deg);
+  }
+}
+/* creator-part-end */
