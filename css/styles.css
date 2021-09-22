@@ -84,6 +84,7 @@ p {
   background-repeat: no-repeat;
   background-size: cover;
   transition: all 0.4s cubic-bezier(1, 0, 0, 1);
+  z-index: 5;
 }
 .header {
   font-family: var(--jose);
@@ -381,15 +382,15 @@ p {
 }
 .abt-img-1 {
   transform: translate(-80%, -50%);
-  z-index: 9;
+  z-index: 2;
 }
 .abt-img-2 {
   transform: translate(-0%, -130%);
-  z-index: 10;
+  z-index: 3;
 }
 .abt-img-3 {
   transform: translate(-80%, -220%);
-  z-index: 11;
+  z-index: 4;
 }
 .abt-img-4 {
   transform: translate(0%, 25%);
@@ -404,6 +405,9 @@ p {
   flex-direction: column;
   align-items: center;
   margin: 2rem;
+}
+.room-heading {
+  text-align: center;
 }
 .card-wrapper {
   display: flex;
@@ -554,12 +558,16 @@ p {
 }
 .customer-card {
   display: flex;
-  width: 37.5rem;
+  /* width: 37.5rem; */
   background-color: papayawhip;
+  margin: 0.5rem;
+}
+.customer-img-wrapper {
+  width: 12rem;
 }
 .customer-image {
   width: 12rem;
-  margin-left: -0.8rem;
+  margin-left: -0.4rem;
   position: relative;
   top: 2rem;
 }
@@ -685,3 +693,93 @@ p {
   }
 }
 /* creator-part-end */
+@media screen and (max-width: 1300px) {
+  .customer-card {
+    margin: 1rem;
+  }
+}
+@media screen and (max-width: 1270px) {
+  .footer {
+    flex-direction: column;
+  }
+  .footer-lists {
+    display: flex;
+  }
+  .footer-list-item {
+    margin: 0rem 1rem 0rem 1rem;
+  }
+  .footer-input {
+    list-style: none;
+    margin: 0rem 1rem 0rem 1rem;
+  }
+  .footer-image-wrapper {
+    max-width: 70rem;
+  }
+}
+@media screen and (max-width: 1022px) {
+  .customer-card-wrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+@media screen and (max-width: 870px) {
+  .head {
+    height: 100%;
+  }
+}
+@media screen and (max-width: 918px) {
+  .About-us {
+    flex-direction: column;
+    padding: 0rem 0rem 38rem 0rem;
+  }
+  .abt-image {
+    top: 18rem;
+    outline: rgb(136, 124, 59, 0.5) solid 0.5rem;
+    outline-offset: -13vw;
+  }
+  .abt-img {
+    width: 13rem;
+  }
+}
+@media screen and (max-width: 778px) {
+  .footer-lists {
+    display: flex;
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 504px) {
+  .customer-card {
+    flex-direction: column;
+  }
+  .customer-img-wrapper {
+    margin-left: 0.4rem;
+    position: relative;
+    bottom: 2rem;
+  }
+}
+@media screen and (max-width: 730px) {
+  .customer-para {
+    width: 15rem;
+  }
+}
+@media screen and (max-width: 540px) {
+  .abt-img {
+    width: 10rem;
+  }
+}
+@media screen and (max-width: 520px) {
+  .room-cost {
+    font-size: 2rem;
+    text-align: left;
+  }
+  .room-button {
+    padding: 0.5rem;
+  }
+}
+@media screen and (max-width: 700px) {
+  .creator {
+    flex-direction: column-reverse;
+    align-items: center;
+    padding: 0;
+  }
+}
